@@ -21,7 +21,16 @@ class _CartScreenState extends State<CartScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("My Cart")),
+      appBar: AppBar(
+        title: const Text(
+          "Cart",
+          style: TextStyle(
+            fontSize: 25,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        centerTitle: true,
+      ),
       body: BlocBuilder<CartBloc, CartState>(
         builder: (context, state) {
           if (state is ProductLoaded) {

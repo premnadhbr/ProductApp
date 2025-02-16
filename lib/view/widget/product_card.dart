@@ -61,7 +61,7 @@ class ProductCard extends StatelessWidget {
                     icon: const Icon(Icons.add_shopping_cart, size: 16),
                     label: const Text('Add to cart'),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFF4CAF50),
+                      backgroundColor: const Color.fromARGB(255, 246, 8, 8),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
